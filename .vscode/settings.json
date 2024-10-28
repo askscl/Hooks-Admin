@@ -45,5 +45,6 @@
 		"truetype",
 		"zhongyingwen",
 		"zhuti"
-	]
+    ],
+    "editor.detectIndentation": false
 }
