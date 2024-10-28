@@ -75,7 +75,7 @@ const LayoutMenu = (props: any) => {
 		try {
 			getMenuList();
 			// const { data } = await getMenuList();
-			const { data } = menuListData;
+			const { data } = menuListData; // 改为本地数据路由
 			if (!data) return;
 			setMenuList(deepLoopFloat(data));
 			// 存储处理过后的所有面包屑导航栏到 redux 中
