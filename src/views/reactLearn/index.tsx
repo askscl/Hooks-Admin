@@ -1,7 +1,7 @@
 const react1 = () => {
 	return (
 		<div>
-			<h1>react33</h1>
+			<button onClick={() => window.onShow()}>全局弹框消息</button>
 		</div>
 	);
 };

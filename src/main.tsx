@@ -10,6 +10,8 @@ import { PersistGate } from "redux-persist/integration/react";
 import { Provider } from "react-redux";
 import { store, persistor } from "@/redux";
 import App from "@/App";
+// ===========================================测试学习star==========================================
+import "@/views/reactLearn/Message/index.tsx"; // 自定义全局消息组件
 
 // react 17 创建，控制台会报错，暂时不影响使用（菜单折叠时不会出现闪烁）
 // ReactDOM.render(
