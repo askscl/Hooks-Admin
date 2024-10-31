@@ -18,7 +18,10 @@ const Fullscreen = () => {
 		screenfull.toggle();
 	};
 	return (
-		<i className={["icon-style iconfont", fullScreen ? "icon-suoxiao" : "icon-fangda"].join(" ")} onClick={handleFullScreen}></i>
+		<i
+			className={["icon-style iconfont", fullScreen ? "icon-suoxiao" : "icon-fangda"].join(" ")}
+			onClick={handleFullScreen}
+		></i>
 	);
 };
 export default Fullscreen;
