@@ -64,6 +64,7 @@ module.exports = {
 
 		// react (https://github.com/jsx-eslint/eslint-plugin-react)
 		"react-hooks/rules-of-hooks": "off",
-		"react-hooks/exhaustive-deps": "off"
+		"react-hooks/exhaustive-deps": "off",
+		"react/prop-types": "off" // 在 React v16.8+ 中已弃用? 关闭eslint对prop-types的检查
 	}
 };

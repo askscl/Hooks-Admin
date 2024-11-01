@@ -28,6 +28,7 @@
 		"js-md5": "^0.7.3",
 		"moment": "^2.29.3",
 		"nprogress": "^0.2.0",
+		"prop-types": "^15.8.1",
 		"qs": "^6.10.5",
 		"react": "^18.2.0",
 		"react-activation": "^0.11.2",
