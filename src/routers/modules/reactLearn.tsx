@@ -16,7 +16,7 @@ const reactLearnRouter: Array<RouteObject> = [
 				element: lazyLoad(React.lazy(() => import("@/views/reactLearn/index"))),
 				meta: {
 					requiresAuth: true,
-					title: "测试1",
+					title: "组件通信",
 					key: "test1"
 				}
 			},
@@ -25,7 +25,7 @@ const reactLearnRouter: Array<RouteObject> = [
 				element: lazyLoad(React.lazy(() => import("@/views/reactLearn/test2"))),
 				meta: {
 					requiresAuth: true,
-					title: "测试2",
+					title: "useState",
 					key: "test2"
 				}
 			}

@@ -34,12 +34,10 @@ const defaultProps: Partial<Props> = {
 };
 const Card: React.FC<Props> = props => {
 	// ------------------------------------------------------------
-	// 1.创建自定义事件
-	const e = new Event("on-card"); //不要跟原生事件名重复就行
-	const clickTap = () => {
-		e.params = { name: "我是自定义事件参数" };
-		window.dispatchEvent(e);
-	};
+	//--接收方
+	window.addEventListener("on-card", e => {
+		console.log("我是B收到了", e.params.name);
+	});
 	// ------------------------------------------------------------
 	const { title } = { ...defaultProps, ...props };
 	return (
@@ -50,21 +48,13 @@ const Card: React.FC<Props> = props => {
 			</header>
 			<main>{props.children}</main>
 			<footer>
-				{/* <button onClick={() => props.callback && props.callback("我是子组件数据")}>确认</button> */}
-				<button onClick={clickTap}>发送</button>
+				<button onClick={() => props.callback && props.callback("我是子组件数据")}>确认</button>
 				<button>取消</button>
 			</footer>
 		</div>
 	);
 };
 
-declare global {
-	interface Event {
-		params: {
-			name: string;
-		};
-	}
-}
 /* Card.propTypes = {
 	title: PropTypes.string
 }; */

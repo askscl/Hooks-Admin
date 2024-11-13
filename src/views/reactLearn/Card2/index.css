@@ -1,0 +1,32 @@
+.card {
+    max-width: 500px;
+    background: white;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #cccccc;
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: 1px solid #cccccc;
+        div:last-child {
+            color: #1677ff;
+        }
+    }
+    main {
+        min-height: 200px;
+        padding: 10px;
+        border-bottom: 1px solid #cccccc;
+    }
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 10px;
+        button {
+            padding: 3px 10px;
+            margin-left: 10px;
+        }
+    }
+}

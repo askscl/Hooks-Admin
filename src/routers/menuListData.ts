@@ -15,12 +15,12 @@ const menuListData = {
 				{
 					icon: "AppstoreOutlined",
 					path: "/reactLearn/test1",
-					title: "测试1"
+					title: "组件通信"
 				},
 				{
 					icon: "AppstoreOutlined",
 					path: "/reactLearn/test2",
-					title: "测试2"
+					title: "useState"
 				}
 			]
 		},
