@@ -14,6 +14,7 @@ function reducer(state: typeof initialState, action: { type: "increment" | "decr
 	}
 }
 
+//====================================================================================================================================
 // 购物车案例
 const initData = [
 	{ name: "小满(只)", price: 100, count: 1, id: 1, isEdit: false },
