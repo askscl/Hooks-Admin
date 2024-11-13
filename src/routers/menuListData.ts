@@ -19,8 +19,13 @@ const menuListData = {
 				},
 				{
 					icon: "AppstoreOutlined",
-					path: "/reactLearn/test2",
+					path: "/reactLearn/useState",
 					title: "useState"
+				},
+				{
+					icon: "AppstoreOutlined",
+					path: "/reactLearn/useReducer",
+					title: "useReducer"
 				}
 			]
 		},

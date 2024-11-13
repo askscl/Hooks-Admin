@@ -21,12 +21,21 @@ const reactLearnRouter: Array<RouteObject> = [
 				}
 			},
 			{
-				path: "/reactLearn/test2",
-				element: lazyLoad(React.lazy(() => import("@/views/reactLearn/test2"))),
+				path: "/reactLearn/useState",
+				element: lazyLoad(React.lazy(() => import("@/views/reactLearn/useState"))),
 				meta: {
 					requiresAuth: true,
 					title: "useState",
-					key: "test2"
+					key: "useState"
+				}
+			},
+			{
+				path: "/reactLearn/useReducer",
+				element: lazyLoad(React.lazy(() => import("@/views/reactLearn/useReducer"))),
+				meta: {
+					requiresAuth: true,
+					title: "useReducer",
+					key: "useReducer"
 				}
 			}
 		]
