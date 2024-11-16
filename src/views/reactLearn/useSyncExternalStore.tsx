@@ -31,7 +31,7 @@
 */
 import { useStorage } from "@/hooks/learn/useStorage"
 import { useHistory } from "@/hooks/learn/useHistory"
-import { use } from "echarts/core"
+
 const App = () => {
 	const [count, setCount] = useStorage("count", 1)
 	const [url, push, replace] = useHistory()
