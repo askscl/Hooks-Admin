@@ -1,16 +1,16 @@
-import { useReducer } from "react";
+import { useReducer } from "react"
 
 // 计数器案例
-const initialState = { count: 0 };
+const initialState = { count: 0 }
 
 function reducer(state: typeof initialState, action: { type: "increment" | "decrement" }) {
 	switch (action.type) {
 		case "increment":
-			return { count: state.count + 1 };
+			return { count: state.count + 1 }
 		case "decrement":
-			return { count: state.count - 1 };
+			return { count: state.count - 1 }
 		default:
-			throw new Error();
+			throw new Error()
 	}
 }
 
@@ -20,39 +20,39 @@ const initData = [
 	{ name: "小满(只)", price: 100, count: 1, id: 1, isEdit: false },
 	{ name: "中满(只)", price: 200, count: 1, id: 2, isEdit: false },
 	{ name: "大满(只)", price: 300, count: 1, id: 3, isEdit: false }
-];
-type List = typeof initData;
+]
+type List = typeof initData
 interface Action {
-	type: "add" | "sub" | "delete" | "edit" | "update";
-	id: number;
-	newName?: string;
+	type: "add" | "sub" | "delete" | "edit" | "update"
+	id: number
+	newName?: string
 }
 
 function reducerData(state: List, action: Action) {
-	const item = state.find(item => item.id === action.id)!;
+	const item = state.find(item => item.id === action.id)!
 	switch (action.type) {
 		case "add":
-			item.count++;
-			return [...state];
+			item.count++
+			return [...state]
 		case "sub":
-			item.count--;
-			return [...state];
+			item.count--
+			return [...state]
 		case "delete":
-			return state.filter(item => item.id !== action.id);
+			return state.filter(item => item.id !== action.id)
 		case "edit":
-			item.isEdit = !item.isEdit;
-			return [...state];
+			item.isEdit = !item.isEdit
+			return [...state]
 		case "update":
-			item.name = action.newName!;
-			return [...state];
+			item.name = action.newName!
+			return [...state]
 		default:
-			return state;
+			return state
 	}
 }
 
 const App = () => {
-	const [state, dispatch] = useReducer(reducer, initialState);
-	const [data, dispatchData] = useReducer(reducerData, initData);
+	const [state, dispatch] = useReducer(reducer, initialState)
+	const [data, dispatchData] = useReducer(reducerData, initData)
 	return (
 		<>
 			<div>useReducer</div>
@@ -103,7 +103,7 @@ const App = () => {
 										<button onClick={() => dispatchData({ type: "delete", id: item.id })}>删除</button>
 									</td>
 								</tr>
-							);
+							)
 						})}
 					</tbody>
 					<tfoot>
@@ -116,7 +116,7 @@ const App = () => {
 				</table>
 			</div>
 		</>
-	);
-};
+	)
+}
 
-export default App;
+export default App

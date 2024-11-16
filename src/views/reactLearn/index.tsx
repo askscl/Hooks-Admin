@@ -1,12 +1,12 @@
 /* 
 	组件通信练习
 */
-import Card from "@/views/reactLearn/Card/index";
-import Card2 from "@/views/reactLearn/Card2/index";
+import Card from "@/views/reactLearn/Card/index"
+import Card2 from "@/views/reactLearn/Card2/index"
 
 const fn = (params: string) => {
-	console.log(params);
-};
+	console.log(params)
+}
 
 const react1 = () => {
 	return (
@@ -18,7 +18,7 @@ const react1 = () => {
 				<div>昨天万圣节！</div>
 			</Card> */}
 		</div>
-	);
-};
+	)
+}
 
-export default react1;
+export default react1

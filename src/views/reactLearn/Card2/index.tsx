@@ -1,11 +1,11 @@
-import "./index.css";
+import "./index.css"
 // import PropTypes from "prop-types";
 
 // 1.第一种写法interface 安装给 props 添加类型
 interface Props {
-	title?: string;
-	callback?: (params: string) => void;
-	children?: React.ReactNode;
+	title?: string
+	callback?: (params: string) => void
+	children?: React.ReactNode
 }
 
 /* export default function Card(props: Props) {
@@ -31,15 +31,15 @@ interface Props {
 // 2.声明一个默认对象
 const defaultProps: Partial<Props> = {
 	title: "早上好"
-};
+}
 const Card: React.FC<Props> = props => {
 	// ------------------------------------------------------------
 	//--接收方
 	window.addEventListener("on-card", e => {
-		console.log("我是B收到了", e.params.name);
-	});
+		console.log("我是B收到了", e.params.name)
+	})
 	// ------------------------------------------------------------
-	const { title } = { ...defaultProps, ...props };
+	const { title } = { ...defaultProps, ...props }
 	return (
 		<div className="card">
 			<header>
@@ -52,11 +52,11 @@ const Card: React.FC<Props> = props => {
 				<button>取消</button>
 			</footer>
 		</div>
-	);
-};
+	)
+}
 
 /* Card.propTypes = {
 	title: PropTypes.string
 }; */
 
-export default Card;
+export default Card

@@ -1,8 +1,8 @@
 // import React from "react";
 // import lazyLoad from "@/routers/util/lazyLoad";
-import { LayoutIndex } from "@/routers/constant";
-import { RouteObject } from "@/routers/interface";
-import Test from "@/views/test/index";
+import { LayoutIndex } from "@/routers/constant"
+import { RouteObject } from "@/routers/interface"
+import Test from "@/views/test/index"
 
 // 测试模块
 const testRouter: Array<RouteObject> = [
@@ -21,6 +21,6 @@ const testRouter: Array<RouteObject> = [
 			}
 		]
 	}
-];
+]
 
-export default testRouter;
+export default testRouter

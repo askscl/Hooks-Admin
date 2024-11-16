@@ -1,5 +1,5 @@
-import { useEcharts } from "@/hooks/useEcharts";
-import * as echarts from "echarts";
+import { useEcharts } from "@/hooks/useEcharts"
+import * as echarts from "echarts"
 
 const NestedChart = () => {
 	let option: echarts.EChartsOption = {
@@ -8,7 +8,18 @@ const NestedChart = () => {
 			formatter: "{a} <br/>{b}: {c} ({d}%)"
 		},
 		legend: {
-			data: ["Direct", "Marketing", "Search Engine", "Email", "Union Ads", "Video Ads", "Baidu", "Google", "Bing", "Others"],
+			data: [
+				"Direct",
+				"Marketing",
+				"Search Engine",
+				"Email",
+				"Union Ads",
+				"Video Ads",
+				"Baidu",
+				"Google",
+				"Bing",
+				"Others"
+			],
 			textStyle: {
 				color: "#a1a1a1"
 			}
@@ -83,10 +94,10 @@ const NestedChart = () => {
 				]
 			}
 		]
-	};
+	}
 
-	const [echartsRef] = useEcharts(option);
-	return <div ref={echartsRef} className="card content-box"></div>;
-};
+	const [echartsRef] = useEcharts(option)
+	return <div ref={echartsRef} className="card content-box"></div>
+}
 
-export default NestedChart;
+export default NestedChart

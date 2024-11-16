@@ -270,6 +270,6 @@ const menuListData = {
 		}
 	],
 	msg: "成功"
-};
+}
 
-export default menuListData;
+export default menuListData

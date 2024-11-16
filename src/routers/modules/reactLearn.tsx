@@ -1,7 +1,7 @@
-import React from "react";
-import lazyLoad from "@/routers/utils/lazyLoad";
-import { LayoutIndex } from "@/routers/constant";
-import { RouteObject } from "@/routers/interface";
+import React from "react"
+import lazyLoad from "@/routers/utils/lazyLoad"
+import { LayoutIndex } from "@/routers/constant"
+import { RouteObject } from "@/routers/interface"
 
 // react学习模块
 const reactLearnRouter: Array<RouteObject> = [
@@ -49,6 +49,6 @@ const reactLearnRouter: Array<RouteObject> = [
 			}
 		]
 	}
-];
+]
 
-export default reactLearnRouter;
+export default reactLearnRouter
