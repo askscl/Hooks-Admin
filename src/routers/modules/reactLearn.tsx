@@ -37,6 +37,15 @@ const reactLearnRouter: Array<RouteObject> = [
 					title: "useReducer",
 					key: "useReducer"
 				}
+			},
+			{
+				path: "/reactLearn/useSyncExternalStore",
+				element: lazyLoad(React.lazy(() => import("@/views/reactLearn/useSyncExternalStore"))),
+				meta: {
+					requiresAuth: true,
+					title: "useSyncExternalStore",
+					key: "useSyncExternalStore"
+				}
 			}
 		]
 	}

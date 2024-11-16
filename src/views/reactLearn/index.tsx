@@ -1,3 +1,6 @@
+/* 
+	组件通信练习
+*/
 import Card from "@/views/reactLearn/Card/index";
 import Card2 from "@/views/reactLearn/Card2/index";
 
