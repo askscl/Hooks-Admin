@@ -10,8 +10,8 @@ module.exports = {
 		"footer-leading-blank": [1, "always"], // 每个提交信息页脚需要空一行
 		"header-max-length": [2, "always", 108], // 每个提交信息标题最大长度
 		// "subject-empty": [2, "never"],
-		"subject-empty": [0], // 每个提交信息标题不能为空
 		// "type-empty": [2, "never"],
+		"subject-empty": [0], // 每个提交信息标题不能为空
 		"type-empty": [0], // 每个提交信息类型不能为空：0关闭规则，1：警告，2错误
 		"subject-case": [0], // 每个提交信息标题大小写不做限制
 		"type-enum": [
