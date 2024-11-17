@@ -1,5 +1,5 @@
 /* 
-	功能：自定义vite插件，实现mock数据
+	功能：自定义vite插件，实现mock 数据
 */
 import type { Plugin } from "vite"
 import mockjs from "mockjs"
