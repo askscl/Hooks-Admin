@@ -13,7 +13,7 @@ module.exports = {
 		"type-empty": [2, "never"],
 		"subject-case": [0],
 		"type-enum": [
-			2,
+			0,
 			"always",
 			[
 				"feat",
@@ -156,4 +156,4 @@ module.exports = {
 		defaultScope: "",
 		defaultSubject: ""
 	}
-};
+}
