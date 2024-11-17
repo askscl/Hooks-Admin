@@ -12,7 +12,7 @@ module.exports = {
 		// "subject-empty": [2, "never"],
 		// "type-empty": [2, "never"],
 		"subject-empty": [0], // 每个提交信息标题不能为空
-		"type-empty": [0], // 每个提交信息类型不能为空：0关闭规则，1：警告，2错误
+		"type-empty": [0], // 每个提交信息类型不能为空：0关闭规则，1：警告，2错误，never表示反转规则
 		"subject-case": [0], // 每个提交信息标题大小写不做限制
 		"type-enum": [
 			0, // 每个提交信息类型必须为以下类型之一：0关闭规则，1：警告，2错误
