@@ -1,17 +1,18 @@
-import { defineConfig, loadEnv, ConfigEnv, UserConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import { resolve } from "path";
-import { wrapperEnv } from "./src/utils/getEnv";
-import { visualizer } from "rollup-plugin-visualizer";
-import { createHtmlPlugin } from "vite-plugin-html";
-import viteCompression from "vite-plugin-compression";
-import eslintPlugin from "vite-plugin-eslint";
-import { createSvgIconsPlugin } from "vite-plugin-svg-icons";
+import { defineConfig, loadEnv, ConfigEnv, UserConfig } from "vite"
+import react from "@vitejs/plugin-react"
+import { resolve } from "path"
+import { wrapperEnv } from "./src/utils/getEnv"
+import { visualizer } from "rollup-plugin-visualizer"
+import { createHtmlPlugin } from "vite-plugin-html"
+import viteCompression from "vite-plugin-compression"
+import eslintPlugin from "vite-plugin-eslint"
+import { createSvgIconsPlugin } from "vite-plugin-svg-icons"
+import viteMockServer from "./src/views/reactLearn/plugin/ViteMockServer"
 
 // @see: https://vitejs.dev/config/
 export default defineConfig((mode: ConfigEnv): UserConfig => {
-	const env = loadEnv(mode.mode, process.cwd());
-	const viteEnv = wrapperEnv(env);
+	const env = loadEnv(mode.mode, process.cwd())
+	const viteEnv = wrapperEnv(env)
 
 	return {
 		// base: "/",
@@ -76,7 +77,8 @@ export default defineConfig((mode: ConfigEnv): UserConfig => {
 					threshold: 10240,
 					algorithm: "gzip",
 					ext: ".gz"
-				})
+				}),
+			viteMockServer()
 		],
 		esbuild: {
 			pure: viteEnv.VITE_DROP_CONSOLE ? ["console.log", "debugger"] : []
@@ -102,5 +104,5 @@ export default defineConfig((mode: ConfigEnv): UserConfig => {
 				}
 			}
 		}
-	};
-});
+	}
+})

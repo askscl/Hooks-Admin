@@ -31,6 +31,11 @@ const menuListData = {
 					icon: "AppstoreOutlined",
 					path: "/reactLearn/useSyncExternalStore",
 					title: "useSyncExternalStore"
+				},
+				{
+					icon: "AppstoreOutlined",
+					path: "/reactLearn/useTransition",
+					title: "useTransition"
 				}
 			]
 		},

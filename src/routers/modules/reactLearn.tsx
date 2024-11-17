@@ -46,6 +46,15 @@ const reactLearnRouter: Array<RouteObject> = [
 					title: "useSyncExternalStore",
 					key: "useSyncExternalStore"
 				}
+			},
+			{
+				path: "/reactLearn/useTransition",
+				element: lazyLoad(React.lazy(() => import("@/views/reactLearn/useTransition"))),
+				meta: {
+					requiresAuth: true,
+					title: "useTransition",
+					key: "useTransition"
+				}
 			}
 		]
 	}
