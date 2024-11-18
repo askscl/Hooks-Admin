@@ -21,8 +21,8 @@ const reactLearnRouter: Array<RouteObject> = [
 				}
 			},
 			{
-				path: "/reactLearn/useState",
-				element: lazyLoad(React.lazy(() => import("@/views/reactLearn/useState"))),
+				path: "/reactLearn/hooks/useState",
+				element: lazyLoad(React.lazy(() => import("@/views/reactLearn/hooks/useState"))),
 				meta: {
 					requiresAuth: true,
 					title: "useState",
@@ -30,8 +30,8 @@ const reactLearnRouter: Array<RouteObject> = [
 				}
 			},
 			{
-				path: "/reactLearn/useReducer",
-				element: lazyLoad(React.lazy(() => import("@/views/reactLearn/useReducer"))),
+				path: "/reactLearn/hooks/useReducer",
+				element: lazyLoad(React.lazy(() => import("@/views/reactLearn/hooks/useReducer"))),
 				meta: {
 					requiresAuth: true,
 					title: "useReducer",
@@ -39,8 +39,8 @@ const reactLearnRouter: Array<RouteObject> = [
 				}
 			},
 			{
-				path: "/reactLearn/useSyncExternalStore",
-				element: lazyLoad(React.lazy(() => import("@/views/reactLearn/useSyncExternalStore"))),
+				path: "/reactLearn/hooks/useSyncExternalStore",
+				element: lazyLoad(React.lazy(() => import("@/views/reactLearn/hooks/useSyncExternalStore"))),
 				meta: {
 					requiresAuth: true,
 					title: "useSyncExternalStore",
@@ -48,8 +48,8 @@ const reactLearnRouter: Array<RouteObject> = [
 				}
 			},
 			{
-				path: "/reactLearn/useTransition",
-				element: lazyLoad(React.lazy(() => import("@/views/reactLearn/useTransition"))),
+				path: "/reactLearn/hooks/useTransition",
+				element: lazyLoad(React.lazy(() => import("@/views/reactLearn/hooks/useTransition"))),
 				meta: {
 					requiresAuth: true,
 					title: "useTransition",

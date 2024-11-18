@@ -19,22 +19,22 @@ const menuListData = {
 				},
 				{
 					icon: "AppstoreOutlined",
-					path: "/reactLearn/useState",
+					path: "/reactLearn/hooks/useState",
 					title: "useState"
 				},
 				{
 					icon: "AppstoreOutlined",
-					path: "/reactLearn/useReducer",
+					path: "/reactLearn/hooks/useReducer",
 					title: "useReducer"
 				},
 				{
 					icon: "AppstoreOutlined",
-					path: "/reactLearn/useSyncExternalStore",
+					path: "/reactLearn/hooks/useSyncExternalStore",
 					title: "useSyncExternalStore"
 				},
 				{
 					icon: "AppstoreOutlined",
-					path: "/reactLearn/useTransition",
+					path: "/reactLearn/hooks/useTransition",
 					title: "useTransition"
 				},
 				{
