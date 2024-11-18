@@ -55,6 +55,15 @@ const reactLearnRouter: Array<RouteObject> = [
 					title: "useTransition",
 					key: "useTransition"
 				}
+			},
+			{
+				path: "/reactLearn/hooks/useDeferredValue",
+				element: lazyLoad(React.lazy(() => import("@/views/reactLearn/hooks/useDeferredValue"))),
+				meta: {
+					requiresAuth: true,
+					title: "useDeferredValue",
+					key: "useDeferredValue"
+				}
 			}
 		]
 	}
