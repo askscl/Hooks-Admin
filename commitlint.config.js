@@ -9,10 +9,10 @@ module.exports = {
 		"body-leading-blank": [2, "always"], // 每个提交信息主体需要空一行
 		"footer-leading-blank": [1, "always"], // 每个提交信息页脚需要空一行
 		"header-max-length": [2, "always", 108], // 每个提交信息标题最大长度
-		// "subject-empty": [2, "never"],
-		// "type-empty": [2, "never"],
-		"subject-empty": [0], // 每个提交信息标题不能为空
-		"type-empty": [0], // 每个提交信息类型不能为空：0关闭规则，1：警告，2错误，never表示反转规则
+		"subject-empty": [2, "never"],
+		"type-empty": [2, "never"],
+		// "subject-empty": [0], // 每个提交信息标题不能为空
+		// "type-empty": [0], // 每个提交信息类型不能为空：0关闭规则，1：警告，2错误，never表示反转规则
 		"subject-case": [0], // 每个提交信息标题大小写不做限制
 		"type-enum": [
 			2, // 每个提交信息类型必须为以下类型之一：0关闭规则，1：警告，2错误
