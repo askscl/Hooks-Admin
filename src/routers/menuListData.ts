@@ -41,6 +41,11 @@ const menuListData = {
 					icon: "AppstoreOutlined",
 					path: "/reactLearn/hooks/useDeferredValue",
 					title: "useDeferredValue"
+				},
+				{
+					icon: "AppstoreOutlined",
+					path: "/reactLearn/hooks/useEffect",
+					title: "useEffect"
 				}
 			]
 		},
