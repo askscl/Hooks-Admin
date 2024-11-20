@@ -21,6 +21,15 @@ const reactLearnRouter: Array<RouteObject> = [
 				}
 			},
 			{
+				path: "/reactLearn/memo",
+				element: lazyLoad(React.lazy(() => import("@/views/reactLearn/memo"))),
+				meta: {
+					requiresAuth: true,
+					title: "组件memo",
+					key: "memo"
+				}
+			},
+			{
 				path: "/reactLearn/hooks/useState",
 				element: lazyLoad(React.lazy(() => import("@/views/reactLearn/hooks/useState"))),
 				meta: {
@@ -81,6 +90,24 @@ const reactLearnRouter: Array<RouteObject> = [
 					requiresAuth: true,
 					title: "useRef",
 					key: "useRef"
+				}
+			},
+			{
+				path: "/reactLearn/hooks/useMemo",
+				element: lazyLoad(React.lazy(() => import("@/views/reactLearn/hooks/useMemo"))),
+				meta: {
+					requiresAuth: true,
+					title: "useMemo",
+					key: "useMemo"
+				}
+			},
+			{
+				path: "/reactLearn/hooks/useCallback",
+				element: lazyLoad(React.lazy(() => import("@/views/reactLearn/hooks/useCallback"))),
+				meta: {
+					requiresAuth: true,
+					title: "useCallback",
+					key: "useCallback"
 				}
 			}
 		]

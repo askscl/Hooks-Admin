@@ -19,6 +19,11 @@ const menuListData = {
 				},
 				{
 					icon: "AppstoreOutlined",
+					path: "/reactLearn/memo",
+					title: "组件memo"
+				},
+				{
+					icon: "AppstoreOutlined",
 					path: "/reactLearn/hooks/useState",
 					title: "useState"
 				},
@@ -51,6 +56,16 @@ const menuListData = {
 					icon: "AppstoreOutlined",
 					path: "/reactLearn/hooks/useRef",
 					title: "useRef"
+				},
+				{
+					icon: "AppstoreOutlined",
+					path: "/reactLearn/hooks/useMemo",
+					title: "useMemo"
+				},
+				{
+					icon: "AppstoreOutlined",
+					path: "/reactLearn/hooks/useCallback",
+					title: "useCallback"
 				}
 			]
 		},
