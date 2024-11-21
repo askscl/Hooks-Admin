@@ -71,6 +71,11 @@ const menuListData = {
 					icon: "AppstoreOutlined",
 					path: "/reactLearn/hooks/useCallback",
 					title: "useCallback"
+				},
+				{
+					icon: "AppstoreOutlined",
+					path: "/reactLearn/hooks/useImperativeHandle",
+					title: "useImperativeHandle"
 				}
 			]
 		},

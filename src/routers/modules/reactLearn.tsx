@@ -118,6 +118,15 @@ const reactLearnRouter: Array<RouteObject> = [
 					title: "useCallback",
 					key: "useCallback"
 				}
+			},
+			{
+				path: "/reactLearn/hooks/useImperativeHandle",
+				element: lazyLoad(React.lazy(() => import("@/views/reactLearn/hooks/useImperativeHandle"))),
+				meta: {
+					requiresAuth: true,
+					title: "useImperativeHandle",
+					key: "useImperativeHandle"
+				}
 			}
 		]
 	}
