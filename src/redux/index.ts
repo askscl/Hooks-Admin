@@ -12,11 +12,11 @@ import breadcrumb from "./modules/breadcrumb/reducer"
 
 // 创建reducer(拆分reducer)
 const reducer = combineReducers({
+	auth,
+	breadcrumb,
 	global,
 	menu,
-	tabs,
-	auth,
-	breadcrumb
+	tabs
 })
 
 // redux 持久化配置
