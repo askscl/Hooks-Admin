@@ -30,6 +30,15 @@ const reactLearnRouter: Array<RouteObject> = [
 				}
 			},
 			{
+				path: "/reactLearn/forwardRef",
+				element: lazyLoad(React.lazy(() => import("@/views/reactLearn/forwardRef"))),
+				meta: {
+					requiresAuth: true,
+					title: "forwardRef",
+					key: "forwardRef"
+				}
+			},
+			{
 				path: "/reactLearn/hooks/useState",
 				element: lazyLoad(React.lazy(() => import("@/views/reactLearn/hooks/useState"))),
 				meta: {

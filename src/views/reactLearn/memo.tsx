@@ -29,7 +29,7 @@ const App = () => {
 	// const list = [1, 2, 3]
 	return (
 		<div>
-			<h1>useRef</h1>
+			<h1>memo</h1>
 			<button onClick={() => setCount(count + 1)}>count: {count}</button>
 			{/* <Son /> */}
 			<MemoSon list={list} />

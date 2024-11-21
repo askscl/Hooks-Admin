@@ -24,6 +24,11 @@ const menuListData = {
 				},
 				{
 					icon: "AppstoreOutlined",
+					path: "/reactLearn/forwardRef",
+					title: "forwardRef"
+				},
+				{
+					icon: "AppstoreOutlined",
 					path: "/reactLearn/hooks/useState",
 					title: "useState"
 				},
