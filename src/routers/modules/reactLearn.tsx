@@ -39,6 +39,15 @@ const reactLearnRouter: Array<RouteObject> = [
 				}
 			},
 			{
+				path: "/reactLearn/redux/reduxTest",
+				element: lazyLoad(React.lazy(() => import("@/views/reactLearn/redux/reduxTest"))),
+				meta: {
+					requiresAuth: true,
+					title: "reduxTest",
+					key: "reduxTest"
+				}
+			},
+			{
 				path: "/reactLearn/hooks/useState",
 				element: lazyLoad(React.lazy(() => import("@/views/reactLearn/hooks/useState"))),
 				meta: {

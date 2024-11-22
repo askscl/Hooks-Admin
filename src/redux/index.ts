@@ -9,6 +9,8 @@ import menu from "./modules/menu/reducer"
 import tabs from "./modules/tabs/reducer"
 import auth from "./modules/auth/reducer"
 import breadcrumb from "./modules/breadcrumb/reducer"
+// 测试案例counter
+import counter from "./modules/counter/reducer"
 
 // 创建reducer(拆分reducer)
 const reducer = combineReducers({
@@ -16,7 +18,8 @@ const reducer = combineReducers({
 	breadcrumb,
 	global,
 	menu,
-	tabs
+	tabs,
+	counter
 })
 
 // redux 持久化配置

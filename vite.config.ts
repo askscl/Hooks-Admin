@@ -38,7 +38,7 @@ export default defineConfig((mode: ConfigEnv): UserConfig => {
 		server: {
 			host: "0.0.0.0", // 服务器主机名，如果允许外部访问，可设置为"0.0.0.0"
 			port: viteEnv.VITE_PORT,
-			open: viteEnv.VITE_OPEN,
+			// open: viteEnv.VITE_OPEN,
 			cors: true,
 			// https: false,
 			// 代理跨域（mock 不需要配置，这里只是个事列）
@@ -71,13 +71,13 @@ export default defineConfig((mode: ConfigEnv): UserConfig => {
 			viteEnv.VITE_REPORT && visualizer(),
 			// * gzip compress
 			viteEnv.VITE_BUILD_GZIP &&
-				viteCompression({
-					verbose: true,
-					disable: false,
-					threshold: 10240,
-					algorithm: "gzip",
-					ext: ".gz"
-				}),
+			viteCompression({
+				verbose: true,
+				disable: false,
+				threshold: 10240,
+				algorithm: "gzip",
+				ext: ".gz"
+			}),
 			viteMockServer()
 		],
 		esbuild: {

@@ -20,3 +20,10 @@ export const SET_ASSEMBLY_SIZE = "SET_ASSEMBLY_SIZE"
 export const SET_LANGUAGE = "SET_LANGUAGE"
 // 设置 setThemeConfig
 export const SET_THEME_CONFIG = "SET_THEME_CONFIG"
+// 练习redux======counter=============================
+// 设置 setCount
+export const SET_COUNT = "SET_COUNT"
+// 设置 increment
+export const INCREMENT = "INCREMENT"
+// 设置 decrement
+export const DECREMENT = "DECREMENT"
