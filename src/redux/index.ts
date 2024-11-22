@@ -2,8 +2,8 @@ import { legacy_createStore as createStore, combineReducers, Store, compose } fr
 import { persistStore, persistReducer } from "redux-persist"
 import { applyMiddleware } from "redux"
 import storage from "redux-persist/lib/storage"
-import reduxThunk from "redux-thunk"
-import reduxPromise from "redux-promise"
+import reduxThunk from "redux-thunk" // redux-thunk 中间件，用于处理异步操作
+import reduxPromise from "redux-promise" // redux-promise 中间件，用于处理异步操作
 import global from "./modules/global/reducer"
 import menu from "./modules/menu/reducer"
 import tabs from "./modules/tabs/reducer"

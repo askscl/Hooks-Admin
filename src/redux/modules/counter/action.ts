@@ -16,3 +16,5 @@ export const decrement = (num: number) => ({
 	type: types.DECREMENT,
 	num
 })
+
+// * incrementAsync 可以参考src\redux\modules\menu\action.ts
