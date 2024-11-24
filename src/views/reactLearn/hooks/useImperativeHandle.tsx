@@ -36,6 +36,7 @@ const App = () => {
 	return (
 		<div>
 			<h1>useImperativeHandle</h1>
+			<div>作用：获取子组件的实例的属性或方法</div>
 			<Son ref={sonRef} />
 			<button onClick={handleClick}>focus</button>
 		</div>

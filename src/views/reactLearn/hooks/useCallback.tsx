@@ -19,6 +19,7 @@ const App = () => {
 	return (
 		<div>
 			<h1>useCallback</h1>
+			<div>作用：在组件多次重新渲染时缓存函数，（避免每次渲染都重新创建函数，从而提高性能）</div>
 			<Input onChange={changeHandler} />
 			<button onClick={() => setCount(count + 1)}>count: {count}</button>
 		</div>

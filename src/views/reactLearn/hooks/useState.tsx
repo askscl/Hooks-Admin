@@ -47,6 +47,11 @@ const Test2 = () => {
 	}
 	return (
 		<div>
+			<h1>useState</h1>
+			<div>
+				setState 修改数据,是异步的 如果遇到多个一样的 setState,会合并成一个，只执行一次（react对异步操作的性能优化）
+				如果想要串行执行，可以用setState的回调函数
+			</div>
 			<h1>{num}</h1>
 			<button onClick={handerClick}>点击</button>
 			<h1>{arr}</h1>

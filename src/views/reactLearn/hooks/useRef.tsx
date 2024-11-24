@@ -29,6 +29,7 @@ const App = () => {
 	return (
 		<div>
 			<h1 ref={hDom}>useRef</h1>
+			<div>作用： 1.获取dom节点(组件自身) 2.保存数据，数据不会触发组件更新(改变 ref 不会触发重新渲染。)</div>
 			<button onClick={handleClick}>点击</button>
 		</div>
 	)

@@ -47,6 +47,11 @@ const App = () => {
 	return (
 		<div>
 			<h1>useEffect</h1>
+			<div>
+				功能：类似vue的watch，用于监听某个数据的变化，从而执行某些操作 区别： 一、控制粒度更细 1.组件初始化 []
+				2.组件初始化+变量更新 [count] 3.组件初始化+组件更新 空
+				二、可以返回一个函数，用于清除副作用：定时器、事件监听器等，在组件卸载时执行
+			</div>
 			<button onClick={() => setCount(count + 1)}>+{count}</button>
 			{show && <Son />}
 			<button onClick={() => setShow(!show)}>切换</button>

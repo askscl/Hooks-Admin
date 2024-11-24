@@ -25,6 +25,11 @@ const App = () => {
 	return (
 		<div>
 			<h1>useMemo</h1>
+			<div>
+				作用：缓存计算结果，避免不必要的计算 使用场景：
+				1.计算结果比较复杂，且依赖的值不变时，可以使用useMemo来缓存计算结果，避免不必要的计算
+				2.缓存引用类型的值，（避免每次渲染都创建新的对象，导致子组件重新渲染）
+			</div>
 			<h2>result: {result}</h2>
 			<button onClick={() => setCount1(count1 + 1)}>count1 + 1:{count1}</button>
 			<button onClick={() => setCount2(count2 + 1)}>count2 + 1:{count2}</button>
