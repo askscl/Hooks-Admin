@@ -19,6 +19,16 @@ const menuListData = {
 				},
 				{
 					icon: "AppstoreOutlined",
+					path: "/reactLearn/communication",
+					title: "组件通信-兄弟通信"
+				},
+				{
+					icon: "AppstoreOutlined",
+					path: "/reactLearn/context",
+					title: "组件通信-父孙通信"
+				},
+				{
+					icon: "AppstoreOutlined",
 					path: "/reactLearn/memo",
 					title: "组件memo"
 				},

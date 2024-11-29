@@ -21,6 +21,24 @@ const reactLearnRouter: Array<RouteObject> = [
 				}
 			},
 			{
+				path: "/reactLearn/communication",
+				element: lazyLoad(React.lazy(() => import("@/views/reactLearn/communication"))),
+				meta: {
+					requiresAuth: true,
+					title: "组件通信-兄弟通信",
+					key: "communication"
+				}
+			},
+			{
+				path: "/reactLearn/context",
+				element: lazyLoad(React.lazy(() => import("@/views/reactLearn/context"))),
+				meta: {
+					requiresAuth: true,
+					title: "组件通信-父孙通信",
+					key: "context"
+				}
+			},
+			{
 				path: "/reactLearn/memo",
 				element: lazyLoad(React.lazy(() => import("@/views/reactLearn/memo"))),
 				meta: {
