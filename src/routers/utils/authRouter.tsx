@@ -13,7 +13,7 @@ const axiosCanceler = new AxiosCanceler()
 const AuthRouter = (props: { children: JSX.Element }) => {
 	const { pathname } = useLocation()
 	const route = searchRoute(pathname, rootRouter)
-	// * 在跳转路由之前，清除所有的请求
+	// * 在跳转路由之前，清除所有的请求--为什么要在跳转路由清除请求？因为：在切换路由的时候，如果上一个路由的请求还没有响应，那么就会导致请求混乱，所以需要在切换路由的时候清除所有的请求
 	axiosCanceler.removeAllPending()
 
 	// * 判断当前路由是否需要访问权限(不需要权限直接放行)

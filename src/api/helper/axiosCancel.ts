@@ -5,7 +5,7 @@ import qs from "qs"
 // * 声明一个 Map 用于存储每个请求的标识 和 取消函数
 let pendingMap = new Map<string, Canceler>()
 
-// * 序列化参数
+// * 序列化参数---为什么要用qs.stringify,因为axios默认是json格式,而我们的请求参数是url拼接的
 export const getPendingUrl = (config: AxiosRequestConfig) =>
 	[config.method, config.url, qs.stringify(config.data), qs.stringify(config.params)].join("&")
 
