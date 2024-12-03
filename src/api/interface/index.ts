@@ -36,3 +36,10 @@ export namespace Login {
 		[propName: string]: any
 	}
 }
+
+// * 文章管理
+export namespace Article {
+	export interface ResList {
+		list: any
+	}
+}

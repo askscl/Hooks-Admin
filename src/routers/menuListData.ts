@@ -6,7 +6,6 @@ const menuListData = {
 			title: "首页",
 			path: "/home/index"
 		},
-
 		{
 			icon: "ShoppingOutlined",
 			title: "react学习",
@@ -91,6 +90,18 @@ const menuListData = {
 					icon: "AppstoreOutlined",
 					path: "/reactLearn/hooks/useImperativeHandle",
 					title: "useImperativeHandle"
+				}
+			]
+		},
+		{
+			icon: "ShoppingOutlined",
+			title: "react练习",
+			path: "/reactTest",
+			children: [
+				{
+					icon: "AppstoreOutlined",
+					path: "/reactTest/publish",
+					title: "文章发布"
 				}
 			]
 		},
