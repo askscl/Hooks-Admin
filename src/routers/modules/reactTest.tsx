@@ -16,8 +16,17 @@ const reactTestRouter: Array<RouteObject> = [
 				element: lazyLoad(React.lazy(() => import("@/views/reactTest/Publish/index"))),
 				meta: {
 					requiresAuth: true,
-					title: "文章发布",
+					title: "创建文章",
 					key: "publish"
+				}
+			},
+			{
+				path: "/reactTest/article",
+				element: lazyLoad(React.lazy(() => import("@/views/reactTest/Article/index"))),
+				meta: {
+					requiresAuth: true,
+					title: "文章管理",
+					key: "article"
 				}
 			}
 		]

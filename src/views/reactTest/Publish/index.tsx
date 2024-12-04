@@ -1,22 +1,15 @@
+import "./index.less"
 import { Card, Breadcrumb, Form, Button, Radio, Input, Upload, Space, Select, message } from "antd"
 import { PlusOutlined } from "@ant-design/icons"
 import { Link } from "react-router-dom"
-import "./index.less"
-import { getMenuList } from "@/api/modules/article"
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
+import { useChannel } from "@/hooks/test/useChannel"
 
 const { Option } = Select
 
 const Publish: React.FC = () => {
 	// 获取频道列表
-	const [channelList, setChannelList] = useState([])
-	useEffect(() => {
-		const getData = async () => {
-			const res = await getMenuList()
-			setChannelList(JSON.parse(JSON.stringify(res)).data.channels)
-		}
-		getData()
-	}, [])
+	const { channelList } = useChannel()
 
 	// 提交表单
 	const onFinish = (values: any) => {

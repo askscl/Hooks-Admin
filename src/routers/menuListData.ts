@@ -101,7 +101,12 @@ const menuListData = {
 				{
 					icon: "AppstoreOutlined",
 					path: "/reactTest/publish",
-					title: "文章发布"
+					title: "创建文章"
+				},
+				{
+					icon: "AppstoreOutlined",
+					path: "/reactTest/article",
+					title: "文章管理"
 				}
 			]
 		},
