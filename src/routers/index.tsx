@@ -1,19 +1,19 @@
 import { Navigate, useRoutes } from "react-router-dom"
-import { RouteObject } from "@/routers/interface"
+import { MyRouteObject } from "@/routers/interface/index2"
 import Login from "@/views/login/index"
 
 // * 导入所有router
 const metaRouters = import.meta.globEager("./modules/*.tsx")
 
 // * 处理路由
-export const routerArray: RouteObject[] = []
+export const routerArray: MyRouteObject[] = []
 Object.keys(metaRouters).forEach(item => {
 	Object.keys(metaRouters[item]).forEach((key: any) => {
 		routerArray.push(...metaRouters[item][key])
 	})
 })
 
-export const rootRouter: RouteObject[] = [
+export const rootRouter: MyRouteObject[] = [
 	{
 		path: "/",
 		element: <Navigate to="/login" />
