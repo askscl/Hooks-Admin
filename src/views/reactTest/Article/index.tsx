@@ -16,7 +16,7 @@ const Article = () => {
 	const { channelList } = useChannel()
 
 	// 状态枚举
-	const status = {
+	const status: { [key: number]: JSX.Element } = {
 		0: <Tag color="default">全部</Tag>,
 		1: <Tag color="warning">待审核</Tag>,
 		2: <Tag color="success">审核通过</Tag>
@@ -28,7 +28,7 @@ const Article = () => {
 			title: "封面",
 			dataIndex: "cover",
 			width: 120,
-			render: cover => {
+			render: (cover: { images: string[] }) => {
 				return <img src={cover.images[0] || img404} width={80} height={60} alt="" />
 			}
 		},
@@ -41,7 +41,7 @@ const Article = () => {
 			title: "状态",
 			dataIndex: "status",
 			// render: data => <Tag color="green">审核通过</Tag>
-			render: data => status[data]
+			render: (data: number) => status[data]
 		},
 		{
 			title: "发布时间",
@@ -61,7 +61,7 @@ const Article = () => {
 		},
 		{
 			title: "操作",
-			render: data => {
+			render: (data: { id: string }) => {
 				return (
 					<Space size="middle">
 						<Button
@@ -225,7 +225,18 @@ const Article = () => {
 	})
 
 	// 获取文章列表
-	const [list, setList] = useState([])
+	type List = {
+		id: string
+		comment_count: number
+		channel_id: number
+		cover: { images: never[] }
+		like_count: number
+		pubdate: string
+		read_count: number
+		status: number
+		title: string
+	}[]
+	const [list, setList] = useState<List>([])
 	const [count, setCount] = useState(0)
 	useEffect(() => {
 		const res = data.filter(item => {
