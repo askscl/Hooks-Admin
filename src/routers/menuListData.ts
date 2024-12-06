@@ -13,6 +13,11 @@ const menuListData = {
 			children: [
 				{
 					icon: "AppstoreOutlined",
+					path: "/reactLearn/classComponent",
+					title: "类组件"
+				},
+				{
+					icon: "AppstoreOutlined",
 					path: "/reactLearn/test1",
 					title: "组件通信"
 				},
@@ -30,6 +35,11 @@ const menuListData = {
 					icon: "AppstoreOutlined",
 					path: "/reactLearn/memo",
 					title: "组件memo"
+				},
+				{
+					icon: "AppstoreOutlined",
+					path: "/reactLearn/zustandTest",
+					title: "状态管理-zustand"
 				},
 				{
 					icon: "AppstoreOutlined",

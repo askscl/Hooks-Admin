@@ -12,6 +12,15 @@ const reactLearnRouter: Array<RouteObject> = [
 		},
 		children: [
 			{
+				path: "/reactLearn/classComponent",
+				element: lazyLoad(React.lazy(() => import("@/views/reactLearn/classComponent"))),
+				meta: {
+					requiresAuth: true,
+					title: "类组件",
+					key: "classComponent"
+				}
+			},
+			{
 				path: "/reactLearn/test1",
 				element: lazyLoad(React.lazy(() => import("@/views/reactLearn/index"))),
 				meta: {
@@ -45,6 +54,15 @@ const reactLearnRouter: Array<RouteObject> = [
 					requiresAuth: true,
 					title: "组件memo",
 					key: "memo"
+				}
+			},
+			{
+				path: "/reactLearn/zustandTest",
+				element: lazyLoad(React.lazy(() => import("@/views/reactLearn/zustandTest"))),
+				meta: {
+					requiresAuth: true,
+					title: "状态管理-zustand",
+					key: "zustandTest"
 				}
 			},
 			{
