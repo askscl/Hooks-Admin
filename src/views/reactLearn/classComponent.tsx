@@ -6,6 +6,10 @@ interface SonProps {
 }
 
 class Son extends Component<SonProps> {
+	// 已被16.9废弃
+	/* UNSAFE_componentWillReceiveProps() {
+		console.log("UNSAFE_componentWillReceiveProps")
+	} */
 	render(): ReactNode {
 		return (
 			<div>
@@ -41,13 +45,45 @@ class App extends Component {
 	state = {
 		count: 0
 	}
-	// 生命周期
+
+	// 状态拦截器，在组件将要挂载的时候调用--基本没用
+	// static getDerivedStateFromProps(props, state) {
+	static getDerivedStateFromProps() {
+		console.log("getDerivedStateFromProps")
+		return null
+	}
+
+	// 已被16.9废弃
+	/* UNSAFE_componentWillMount() {
+		console.log("UNSAFE_componentWillMount")
+	} */
+
 	componentDidMount() {
 		console.log("componentDidMount")
 	}
+
+	// 控制组件更新的阀门
+	shouldComponentUpdate() {
+		console.log("shouldComponentUpdate")
+		return true
+	}
+
+	// 已被16.9废弃
+	/* UNSAFE_componentWillUpdate() {
+		console.log("UNSAFE_componentWillUpdate")
+	} */
+
+	// getSnapshotBeforeUpdate(prevProps, prevState) {
+	getSnapshotBeforeUpdate() {
+		console.log("getSnapshotBeforeUpdate")
+		return null
+	}
+
 	componentDidUpdate() {
 		console.log("componentDidUpdate")
 	}
+
+	// 组件卸载之前
 	componentWillUnmount() {
 		console.log("componentWillUnmount")
 	}
@@ -55,6 +91,7 @@ class App extends Component {
 		this.setState({ count: this.state.count + 1 })
 	}
 	render(): ReactNode {
+		console.log("render")
 		return (
 			<>
 				<div>
