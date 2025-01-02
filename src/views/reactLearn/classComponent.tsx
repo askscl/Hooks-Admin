@@ -58,6 +58,7 @@ class App extends Component {
 		console.log("UNSAFE_componentWillMount")
 	} */
 
+	// 高频生命周期
 	componentDidMount() {
 		console.log("componentDidMount")
 	}
