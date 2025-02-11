@@ -7,8 +7,8 @@ import { loginApi } from "@/api/modules/login"
 import { HOME_URL } from "@/config/config"
 import { connect } from "react-redux"
 import { setToken } from "@/redux/modules/global/action"
-import { useTranslation } from "react-i18next"
 import { setTabsList } from "@/redux/modules/tabs/action"
+import { useTranslation } from "react-i18next"
 import { UserOutlined, LockOutlined, CloseCircleOutlined } from "@ant-design/icons"
 
 const LoginForm = (props: any) => {
