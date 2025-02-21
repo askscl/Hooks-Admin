@@ -28,8 +28,8 @@ const menuListData = {
 				},
 				{
 					icon: "AppstoreOutlined",
-					path: "/reactLearn/context",
-					title: "组件通信-父孙通信"
+					path: "/reactLearn/useContext",
+					title: "组件通信-祖孙通信"
 				},
 				{
 					icon: "AppstoreOutlined",

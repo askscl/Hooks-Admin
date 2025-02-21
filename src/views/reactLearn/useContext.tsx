@@ -44,7 +44,7 @@ const App = () => {
 		<div>
 			<GetMsgContext.Provider value={getMsg}>
 				<AppContext.Provider value={msg}>
-					<h1>Context</h1>
+					<h1>useContext</h1>
 					<A />
 					{fromBMsg}
 				</AppContext.Provider>
