@@ -172,6 +172,15 @@ const reactLearnRouter: Array<RouteObject> = [
 					title: "useImperativeHandle",
 					key: "useImperativeHandle"
 				}
+			},
+			{
+				path: "/reactLearn/hooks/useDebugValue",
+				element: lazyLoad(React.lazy(() => import("@/views/reactLearn/hooks/useDebugValue"))),
+				meta: {
+					requiresAuth: true,
+					title: "useDebugValue",
+					key: "useDebugValue"
+				}
 			}
 		]
 	}

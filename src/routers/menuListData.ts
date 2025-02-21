@@ -100,6 +100,11 @@ const menuListData = {
 					icon: "AppstoreOutlined",
 					path: "/reactLearn/hooks/useImperativeHandle",
 					title: "useImperativeHandle"
+				},
+				{
+					icon: "AppstoreOutlined",
+					path: "/reactLearn/hooks/useDebugValue",
+					title: "useDebugValue"
 				}
 			]
 		},
