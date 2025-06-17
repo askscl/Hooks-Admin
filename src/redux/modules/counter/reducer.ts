@@ -1,4 +1,4 @@
-import produce from "immer" // immer库用于不可变数据，使redux中的state不可变
+import produce from "immer" // immer库用于不可变数据，使redux中的state不可变，相当于深拷贝
 import { AnyAction } from "redux"
 import { CounterState } from "@/redux/interface"
 import * as types from "@/redux/mutation-types"
