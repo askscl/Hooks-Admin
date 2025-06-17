@@ -4,17 +4,13 @@
 
 🚀🚀🚀 Hooks Admin，基于 React18、React-Router v6、React-Hooks、Redux && Redux-Toolkit、TypeScript、Vite2、Ant-Design 开源的一套后台管理框架。
 
-🌈 Redux-Toolkit 版本请切换到 Redux-Toolkit 分支上
+
 
 ### 项目相关文档 📚
 
 -   项目更新日志：[CHANGELOG.md](./CHANGELOG.md)
 
-### Pro 付费版本 🔥
 
--   有需要请加底部微信了解、购买
-
--   Link：https://pro.spicyboy.cn
 
 ### 一、在线预览地址 👀
 
@@ -22,9 +18,7 @@
 
 ### 二、Git 仓库地址 (欢迎 Star⭐)
 
--   Gitee：https://gitee.com/HalseySpicy/Hooks-Admin
-
--   GitHub：https://github.com/HalseySpicy/Hooks-Admin
+-   GitHub：https://github.com/askscl/Hooks-Admin
 
 ### 三、🔨🔨🔨 项目功能
 
@@ -45,10 +39,8 @@
 -   **Clone：**
 
 ```text
-# Gitee
-git clone https://gitee.com/HalseySpicy/Hooks-Admin.git
 # GitHub
-git clone https://github.com/HalseySpicy/Hooks-Admin.git
+git clone https://github.com/askscl/Hooks-Admin.git
 ```
 
 -   **Install：**
