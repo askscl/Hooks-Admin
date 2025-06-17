@@ -138,6 +138,15 @@ const reactLearnRouter: Array<RouteObject> = [
 				}
 			},
 			{
+				path: "/reactLearn/hooks/useEffect2",
+				element: lazyLoad(React.lazy(() => import("@/views/reactLearn/hooks/useEffect2"))),
+				meta: {
+					requiresAuth: true,
+					title: "useEffect2",
+					key: "useEffect2"
+				}
+			},
+			{
 				path: "/reactLearn/hooks/useRef",
 				element: lazyLoad(React.lazy(() => import("@/views/reactLearn/hooks/useRef"))),
 				meta: {

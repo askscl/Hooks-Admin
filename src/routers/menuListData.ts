@@ -83,6 +83,11 @@ const menuListData = {
 				},
 				{
 					icon: "AppstoreOutlined",
+					path: "/reactLearn/hooks/useEffect2",
+					title: "useEffect执行顺序"
+				},
+				{
+					icon: "AppstoreOutlined",
 					path: "/reactLearn/hooks/useRef",
 					title: "useRef"
 				},
