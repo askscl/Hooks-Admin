@@ -171,3 +171,7 @@ Hooks-Admin
 
 -   FastMock： https://www.fastmock.site/
 -   EasyMock：https://mock.mengxuegu.com/
+
+
+### 九、更新日志 📝
+"vite-plugin-eslint": "^1.6.1", 升级到："vite-plugin-eslint": "^1.8.1",
