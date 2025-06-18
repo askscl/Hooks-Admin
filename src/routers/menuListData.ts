@@ -333,7 +333,7 @@ const menuListData = {
 				}
 			]
 		},
-		{
+		/* {
 			icon: "PaperClipOutlined",
 			title: "外部链接",
 			path: "/link",
@@ -363,7 +363,7 @@ const menuListData = {
 					isLink: "http://www.spicyboy.cn"
 				}
 			]
-		}
+		} */
 	],
 	msg: "成功"
 }

@@ -38,6 +38,7 @@ const App = (props: any) => {
 	return (
 		<HashRouter>
 			<ConfigProvider locale={i18nLocale} componentSize={assemblySize}>
+				{/* 授权路由 */}
 				<AuthRouter>
 					<Router />
 				</AuthRouter>
