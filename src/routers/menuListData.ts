@@ -332,7 +332,8 @@ const menuListData = {
 					title: "500页面"
 				}
 			]
-		}/*,
+		}
+		/*
 		 {
 			icon: "PaperClipOutlined",
 			title: "外部链接",
