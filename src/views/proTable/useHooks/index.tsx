@@ -75,9 +75,9 @@ const UseHooks = () => {
 			</div>
 			<div className="auth">
 				<Space>
-					{BUTTONS.add && <Button type="primary">我是 Admin && User 能看到的按钮</Button>}
-					{BUTTONS.delete && <Button type="primary">我是 Admin 能看到的按钮</Button>}
-					{BUTTONS.edit && <Button type="primary">我是 User 能看到的按钮</Button>}
+					{BUTTONS.add && <Button type="primary">我是 Admin && User 能看到的按钮--新增</Button>}
+					{BUTTONS.delete && <Button type="primary">我是 Admin 能看到的按钮--删除</Button>}
+					{BUTTONS.edit && <Button type="primary">我是 User 能看到的按钮--编辑</Button>}
 				</Space>
 			</div>
 			<Table bordered={true} dataSource={dataSource} columns={columns} />
