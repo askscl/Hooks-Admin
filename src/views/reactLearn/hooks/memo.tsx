@@ -12,29 +12,29 @@
 import { memo, useMemo, useState } from "react"
 
 interface IProps {
-	list: number[]
+    list: number[]
 }
 
 const MemoSon = memo(function Son({ list }: IProps) {
-	console.log("son render")
-	return <div>this is son, {list}</div>
+    console.log("son render")
+    return <div>this is son, {list}</div>
 })
 /* function Son() {
 	console.log("son render")
 	return <div>this is son</div>
 } */
 const App = () => {
-	const [count, setCount] = useState(0)
-	const list = useMemo(() => [1, 2, 3], [])
-	// const list = [1, 2, 3]
-	return (
-		<div>
-			<h1>memo</h1>
-			<button onClick={() => setCount(count + 1)}>count: {count}</button>
-			{/* <Son /> */}
-			<MemoSon list={list} />
-		</div>
-	)
+    const [count, setCount] = useState(0)
+    const list = useMemo(() => [1, 2, 3], [])
+    // const list = [1, 2, 3]
+    return (
+        <div>
+            <h1>memo</h1>
+            <button onClick={() => setCount(count + 1)}>count: {count}</button>
+            {/* <Son /> */}
+            <MemoSon list={list} />
+        </div>
+    )
 }
 
 export default App

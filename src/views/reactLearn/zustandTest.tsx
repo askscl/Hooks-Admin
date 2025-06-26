@@ -29,13 +29,13 @@ const URL = "http://geek.itheima.net/v1_0/channels"
 
 // 2.绑定store到组件
 const zustandTest = () => {
-	// const { count, increment } = useStore()
-	return (
-		<div>
-			<h1>zustand</h1>
-			{/* <button onClick={increment}>{count}</button> */}
-		</div>
-	)
+    // const { count, increment } = useStore()
+    return (
+        <div>
+            <h1>zustand</h1>
+            {/* <button onClick={increment}>{count}</button> */}
+        </div>
+    )
 }
 
 export default zustandTest

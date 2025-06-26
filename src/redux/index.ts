@@ -14,18 +14,18 @@ import counter from "./modules/counter/reducer"
 
 // 创建reducer(拆分reducer)
 const reducer = combineReducers({
-	auth,
-	breadcrumb,
-	global,
-	menu,
-	tabs,
-	counter
+    auth,
+    breadcrumb,
+    global,
+    menu,
+    tabs,
+    counter
 })
 
 // redux 持久化配置
 const persistConfig = {
-	key: "redux-state",
-	storage: storage
+    key: "redux-state",
+    storage: storage
 }
 const persistReducerConfig = persistReducer(persistConfig, reducer)
 

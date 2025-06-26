@@ -10,47 +10,47 @@ const AppContext = createContext("")
 // 1.createContext 创建一个上下文对象, 默认值写为一个函数
 
 const GetMsgContext = createContext((msg: string) => {
-	return msg
+    return msg
 })
 
 const B = () => {
-	const msg = useContext(AppContext)
-	const sendMsg = useContext(GetMsgContext)
-	return (
-		<div>
-			<h1>B: {msg}</h1>
-			<button onClick={() => sendMsg("this is from B")}>send msg from B</button>
-		</div>
-	)
+    const msg = useContext(AppContext)
+    const sendMsg = useContext(GetMsgContext)
+    return (
+        <div>
+            <h1>B: {msg}</h1>
+            <button onClick={() => sendMsg("this is from B")}>send msg from B</button>
+        </div>
+    )
 }
 
 const A = () => {
-	return (
-		<div>
-			<h1>A</h1>
-			<B />
-		</div>
-	)
+    return (
+        <div>
+            <h1>A</h1>
+            <B />
+        </div>
+    )
 }
 
 const App = () => {
-	const msg = "this is app msg"
-	const [fromBMsg, setFromBmsg] = useState("")
-	const getMsg = (msg: string) => {
-		setFromBmsg(msg)
-		return msg
-	}
-	return (
-		<div>
-			<GetMsgContext.Provider value={getMsg}>
-				<AppContext.Provider value={msg}>
-					<h1>useContext</h1>
-					<A />
-					{fromBMsg}
-				</AppContext.Provider>
-			</GetMsgContext.Provider>
-		</div>
-	)
+    const msg = "this is app msg"
+    const [fromBMsg, setFromBmsg] = useState("")
+    const getMsg = (msg: string) => {
+        setFromBmsg(msg)
+        return msg
+    }
+    return (
+        <div>
+            <GetMsgContext.Provider value={getMsg}>
+                <AppContext.Provider value={msg}>
+                    <h1>useContext</h1>
+                    <A />
+                    {fromBMsg}
+                </AppContext.Provider>
+            </GetMsgContext.Provider>
+        </div>
+    )
 }
 
 export default App
